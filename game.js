@@ -7,22 +7,22 @@ const result = document.getElementById("result");
 const controls = document.querySelector(".controls-container");
 let cards;
 let interval;
-let firstcard = false;
+let firstCard = false;
 let secondcard = false;
 //Items array
 const items = [
-  { name: "bee", image: "bee.jpg" },
-  { name: "crocodile", image: "crocodile.jpg" },
-  { name: "macaw", image: "macaw.jpg" },
-  { name: "gorilla", image: "gorilla.jpg" },
-  { name: "tiger", image: "tiger.jpg" },
-  { name: "monkey", image: "monkey.jpg" },
-  { name: "chameleon", image: "chameleon.jpg" },
-  { name: "piranha", image: "piranha.jpg" },
-  { name: "anaconda", image: "anaconda.jpg" },
-  { name: "sloth", image: "sloth.jpg" },
-  { name: "cockatoo", image: "cockatoo.jpg" },
-  { name: "adam", image: "adam.jpg" },
+  { name: "bee", image: "bee.png" },
+  { name: "crocodile", image: "crocodile.png" },
+  { name: "macaw", image: "macaw.png" },
+  { name: "gorilla", image: "gorilla.png" },
+  { name: "tiger", image: "tiger.png" },
+  { name: "monkey", image: "monkey.png" },
+  { name: "chameleon", image: "chameleon.png" },
+  { name: "piranha", image: "piranha.png" },
+  { name: "anaconda", image: "anaconda.png" },
+  { name: "sloth", image: "sloth.png" },
+  { name: "cockatoo", image: "cockatoo.png" },
+  { name: "adam", image: "adam.png" },
 ];
 //initial time
 let seconds = 0,minutes = 0;
@@ -146,7 +146,7 @@ startButton.addEventListener("click", () => {
   stopButton.classList.remove("hide");
   startButton.classList.add("hide");
   //Start timer
-  interval = setInterval(timeGenerator, 1000);
+  // interval = setInterval(timeGenerator, 1000);
   //initial moves
   moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
   initializer();
